@@ -35,6 +35,8 @@ const App = () => {
 
         const respose = await fetch(`${api}&S=${title}`);
         const data = await respose.json()
+        console.log("Searching...")
+        console.log(data.search)
         setMovies(data.Search)
 
     }
